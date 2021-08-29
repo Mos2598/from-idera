@@ -23,9 +23,9 @@ function convertToWord(letter) {
 function win(userChoice, computerChoice) {
     userScore++ ;
     userScore_span.innerHTML = userScore;
-    computerScore_span,innerHTML = computerScore;
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord ="comp" .fontsize(3).sub();
+    computerScore_span.innerHTML = computerScore;
+    const smallUserWord = "user" .fontsize(3) .sub();
+    const smallCompWord ="comp"  .fontsize(3) .sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats  ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(function() {
@@ -37,7 +37,7 @@ function win(userChoice, computerChoice) {
 function lose(userChoice, computerChoice) {
     computerScore++ ;
     userScore_span.innerHTML = userScore;
-    computerScore_span,innerHTML = computerScore;
+    computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3).sub();
     const smallCompWord ="comp" .fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost...`;
